@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinconcito Animal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="index.html">
+            <img src="./Imagenes/Imagen1.gif" alt="Logo Pet" class="logo-img"
+          /></a>
+        </div>
+
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-checkbox"
+          aria-hidden="true"
+        />
+
+        <label
+          for="menu-toggle"
+          class="menu-icon"
+          aria-label="Abrir o cerrar menú"
+        >
+          &#9776;
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#Categorias">Mascotas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Rinconcito Animal</h1>
+          <p>
+            Descubrirás todo lo importante para convivir con un animal de
+            compañía. Sea un perro, gato, aves y tortuga, aquí encontrarás
+            valiosos consejos sobre su cuidado y tendencia.
+          </p>
+          <p><em> - Cuida mucho a tus alegres del Hogar</em></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Mascotas</h2>
+        <div class="card-container">
+          <!-- Sección Perros -->
+          <article class="card">
+            <img src="./Imagenes/perro.jpg" alt="Perros" class="card-image" />
+            <h3 class="card-title">Perros</h3>
+            <p class="card-description">Conoce un más</p>
+          </article>
+
+          <!-- Sección Gatos -->
+          <article class="card">
+            <img src="./Imagenes/gatos.jpg" alt="Gatos" class="card-image" />
+            <h3 class="card-title">Gatos</h3>
+            <p class="card-description">Conoce un más</p>
+          </article>
+
+          <!-- Sección Aves -->
+          <article class="card">
+            <img src="./Imagenes/aves.jpg" alt="Aves" class="card-image" />
+            <h3 class="card-title">Aves</h3>
+            <p class="card-description">Conoce un más</p>
+          </article>
+
+          <!-- Sección Tortugas -->
+          <article class="card">
+            <img
+              src="./Imagenes/tortuga.jpg"
+              alt="Tortugas"
+              class="card-image"
+            />
+            <h3 class="card-title">Tortugas</h3>
+            <p class="card-description">Conoce un más</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Rinconcito Animal. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
