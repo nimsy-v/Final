@@ -1,0 +1,162 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* Lado izquierdo con la imagen */
+.left-side {
+  flex: 1;
+  background-image: url("./Imagenes/portadaperros.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+/* Lado derecho con el texto */
+.right-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #dfdada;
+  animation: slideInRight 1.5s ease-out;
+}
+
+.right-side h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.right-side p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Contenedor dividido en tres */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilado para las tres secciones */
+.text-left,
+.text-right,
+.image-box {
+  flex: 1 1 30%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  min-width: 250px;
+}
+
+/* Estilado para el contenedor de la imagen */
+.image-box {
+  background-image: url("./Imagenes/perro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #6c4e4e;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .text-left,
+  .text-right,
+  .image-box {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    flex: none;
+    height: auto;
+  }
+
+  .text-left,
+  .text-right,
+  .image-box {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-side h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-side p {
+    font-size: 1rem;
+  }
+
+  .text-left,
+  .text-right,
+  .image-box {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilado de texto */
+.text-left,
+.text-right {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Animaciones */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
